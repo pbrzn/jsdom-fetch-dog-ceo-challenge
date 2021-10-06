@@ -68,7 +68,6 @@ function filterBreeds(url, letter) {
     const obj = json.message;
     for (const key in obj) {
       if (key[0] === letter) {
-        // const ul = document.getElementById('dog-breeds');
         const breed = document.createElement('li');
         breed.className = "breed"
         breed.innerHTML = `${key}`
